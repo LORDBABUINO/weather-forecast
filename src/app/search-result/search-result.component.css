@@ -23,7 +23,6 @@ li {
 	height: 138px;
 	width: 200px;
 	opacity: 0.75;
-	font-family: Roboto;
 	font-size: 48px;
 	font-weight: bold;
 	color: #3c3c3c;
@@ -43,7 +42,6 @@ li {
 h1 {
 	display: inline-block;
 	height: 28px;
-	font-family: Roboto;
 	font-size: 24px;
 	font-weight: bold;
 	color: #39a3db;
@@ -63,7 +61,6 @@ h1 {
 	display: inline-block;
 	width: 27px;
 	opacity: 0.5;
-	font-family: Roboto;
 	font-size: 14px;
 	color: #3c3c3c;
 	margin-right: 46px;
@@ -71,13 +68,11 @@ h1 {
 }
 
 .temperature-max {
-	font-family: Roboto;
 	font-size: 16px;
 	color: #b30000;
 }
 
 .temperature-min {
-	font-family: Roboto;
 	font-size: 16px;
 	color: #4a90e2;
 }
