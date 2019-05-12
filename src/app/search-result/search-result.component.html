@@ -1,15 +1,15 @@
 <ul>
 	<li *ngFor="let item of items">
-		<div class="temperature-current">{{item.main.temp}}ºC</div>
+		<div class="temperature-current">{{item.currentTemperature}}ºC</div>
 		<div class="description">
-			<h1>{{item.name}}, {{item.sys.country}}</h1>
+			<h1>{{item.city}}, {{item.country}}</h1>
 			<span class="f16">
-				<i class="flag {{item.sys.country.toLowerCase()}}"></i>
+				<i class="flag {{item.country.toLowerCase()}}"></i>
 			</span>
 			<span class="temperature-label">Máx</span>
-			<b class="temperature-max">{{item.main.temp_max}} ºC</b>
+			<b class="temperature-max">{{item.maxTemperature}} ºC</b>
 			<span class="temperature-label">Mín</span>
-			<b class="temperature-min">{{item.main.temp_min}} ºC</b>
+			<b class="temperature-min">{{item.minTemperature}} ºC</b>
 		</div>
 	</li>
 </ul>

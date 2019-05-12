@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SearchResultService } from '../search-result.service'
+import { Weather } from '../models/weather.model'
 
 @Component({
   selector: 'app-search-result',
@@ -17,7 +18,9 @@ export class SearchResultComponent implements OnInit {
 
   ngOnInit() {
 		this.searchResultService.getSearch('petrolina')
-			.subscribe((response: any) => {this.items = response.list})
+			.subscribe((response: any) => {
+				this.items = response.list.map((weather) => new Weather(weather))
+			})
   }
 
 }
