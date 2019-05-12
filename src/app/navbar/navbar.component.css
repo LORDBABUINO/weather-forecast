@@ -32,12 +32,7 @@ input {
 	left: 12px;
 }
 
-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #3c3c3c;
-	opacity: 0.25;
-}
-
-input::-moz-placeholder { /* Firefox 19+ */
+input::-moz-placeholder, input::-webkit-input-placeholder {
   color: #3c3c3c;
 	opacity: 0.25;
 }
