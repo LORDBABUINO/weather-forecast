@@ -17,7 +17,7 @@ li {
 	background-color: white;
 }
 
-.temperature {
+.temperature-current {
 	display: inline-block;
 	margin: 16px;
 	height: 138px;
@@ -34,6 +34,7 @@ li {
 .description {
 	display: inline-block;
 	height: 100%;
+	width: 198px;
 	vertical-align: top;
 	padding-top: 32px;
 	padding-left: 24px;
@@ -48,10 +49,35 @@ h1 {
 	color: #39a3db;
 	vertical-align: middle;
 	margin-right: 8px;
+	margin-bottom: 16px;
 }
 
 .f16 {
 	display: inline-block;
 	height: 16px;
 	vertical-align: middle;
+	margin-bottom: 16px;
+}
+
+.temperature-label {
+	display: inline-block;
+	width: 27px;
+	opacity: 0.5;
+	font-family: Roboto;
+	font-size: 14px;
+	color: #3c3c3c;
+	margin-right: 46px;
+	margin-bottom: 11px;
+}
+
+.temperature-max {
+	font-family: Roboto;
+	font-size: 16px;
+	color: #b30000;
+}
+
+.temperature-min {
+	font-family: Roboto;
+	font-size: 16px;
+	color: #4a90e2;
 }
