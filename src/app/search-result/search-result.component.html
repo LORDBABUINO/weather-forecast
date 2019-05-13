@@ -3,9 +3,11 @@
 		<div class="temperature-current">{{item.currentTemperature}}ºC</div>
 		<div class="description">
 			<h1>{{item.city}}, {{item.country}}</h1>
-			<span class="f16">
-				<i class="flag {{item.country.toLowerCase()}}"></i>
-			</span>
+			<img
+				class="flag"
+				src="https://openweathermap.org/images/flags/{{item.country.toLowerCase()}}.png"
+				alt="Flag {{item.country}}"
+			>
 			<span class="temperature-label">Máx</span>
 			<b class="temperature-max">{{item.maxTemperature}} ºC</b>
 			<span class="temperature-label">Mín</span>
