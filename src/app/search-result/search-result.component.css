@@ -33,10 +33,9 @@ li {
 .description {
 	display: inline-block;
 	height: 100%;
-	width: 198px;
 	vertical-align: top;
 	padding-top: 32px;
-	padding-left: 24px;
+	margin-right: 26px;
 }
 
 h1 {
@@ -74,4 +73,29 @@ h1 {
 .temperature-min {
 	font-size: 16px;
 	color: #4a90e2;
+}
+
+.weather {
+	display: inline-block;
+	position: absolute;
+	width: 162px;
+	left: 100%;
+	transform: translate(-100%);
+	vertical-align: top;
+	margin-top: 40px;
+	text-align: center;
+}
+
+.weather__icon {
+	display: block;
+	margin-right: auto;
+	margin-bottom: 8px;
+	margin-left: auto;
+}
+
+.weather__description {
+	opacity: 0.75;
+	font-size: 14px;
+	font-style: italic;
+	color: #3c3c3c;
 }

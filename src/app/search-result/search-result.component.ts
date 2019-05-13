@@ -17,7 +17,7 @@ export class SearchResultComponent implements OnInit {
 	) { }
 
   ngOnInit() {
-		this.searchResultService.getSearch('petrolina')
+		this.searchResultService.getSearch('São Paulo')
 			.subscribe((response: any) => {
 				this.items = response.list.map((weather) => new Weather(weather))
 			})
