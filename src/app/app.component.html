@@ -1,2 +1,2 @@
-<app-navbar></app-navbar>
-<app-search-result></app-search-result>
+<app-navbar (onSearch)="handleSearch($event)"></app-navbar>
+<app-search-result [city]="city"></app-search-result>

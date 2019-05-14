@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnChanges, Input } from '@angular/core';
 import { SearchResultService } from '../search-result.service'
 import { Weather } from '../models/weather.model'
 
@@ -8,19 +8,19 @@ import { Weather } from '../models/weather.model'
 	styleUrls: ['./search-result.component.css'],
 	providers: [SearchResultService]
 })
-export class SearchResultComponent implements OnInit {
+export class SearchResultComponent implements OnChanges {
 
 	items
+	@Input() city
 
 	constructor(
 		private searchResultService: SearchResultService
 	) { }
 
-  ngOnInit() {
-		this.searchResultService.getSearch('São Paulo')
+  ngOnChanges() {
+		this.searchResultService.getSearch(this.city)
 			.subscribe((response: any) => {
 				this.items = response.list.map((weather) => new Weather(weather))
 			})
   }
-
 }
