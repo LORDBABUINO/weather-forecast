@@ -10,6 +10,7 @@ export class NavbarComponent {
 	@Output() onSearch = new EventEmitter<string>()
 
 	search(city) {
-		this.onSearch.emit(city)
+		this.onSearch.emit(city.value)
+		city.value = null
 	}
 }
